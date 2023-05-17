@@ -10,159 +10,117 @@
         <script src="https://kit.fontawesome.com/a30844655f.js"
             crossorigin="anonymous"></script>
     </head>
-    <body class="bg-gray-100">
+<body class="bg-gray-100">
+    <nav class="navbar bg-black text-white -pb-10">
+        <!-- Navbar Start -->
+    <div class="navbar-start">
+        <div>
+          <a class="btn btn-ghost normal-case text-xl lg:pl-36">Uber</a>
+        </div>
+        <!-- NavBar Left -->
+        <div class="navbar hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+              <li tabindex="0">
+                  <a>
+                      Company
+                      <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/></svg>
+                    </a>
+                    <ul class="dropdown-content menu p-2 bg-primary-content p-2 text-black">
+                        <li><a>About Us</a></li>
+                        <li><a>Our Offerings</a></li>
+                        <li><a>how Uber Works</a></li>
+                        <li><a>Global Citizenship</a></li>
+                        <li><a>Explore</a></li>
+                        <li><a>Newsroom</a></li>
+                        <li><a>investor Relations</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Careers</a></li>
+                    </ul>
+                </li>
+                <li><a>Safety</a></li>
+            <li><a>Help</a></li>
+          </ul>
+        </div>
+    </div>
 
-        <!-- Navbar -->
-        <nav class="p-2 bg-black shadow-md">
-            <div class="container mx-auto px-16 flex items-center
-                justify-between">
+        <!-- Navbar End -->
+        <div class="navbar-end lg:pr-36 ">
+            <div class="hidden lg:flex">
+                <button class="transition duration-200
+                    hover:bg-gray-700 py-2
+                    px-3
+                    rounded-full">
+                    <i class="fa-solid fa-globe pr-2"
+                        style="color: #ffffff;"></i>
+                    EN
+                </button>
+                <div>
+                    <button class="transition duration-200
+                        hover:bg-gray-700 py-2
+                        px-3
+                        rounded-full">
+                        <i class="fa-solid fa-grip pr-2"
+                            style="color: #ffffff;"></i>
+                        Products
+                    </button>
+                </div>
+            </div>
+                <!-- Log In/Sign Up Mobile Response -->
                 <div class="flex items-center">
-                    <!-- Uber Logo -->
-                    <ul>
-                        <li>
-                            <a href="./index.html" class="text-2xl font-normal
-                                text-primary-content">Uber</a>
-                        </li>
-                    </ul>
-                    <!-- Dropdown -->
-                    <ul class="mx-6">
-                        <li class="inline-block mr-1">
-                            <div class="flex-none">
-                                <ul class="menu menu-horizontal px-1">
-                                    <li>
-                                        <a class="transition duration-200
-                                            hover:bg-gray-700 py-2
-                                            px-3
-                                            text-white font-semibold">
-                                            Company
-                                            <svg class="fill-current"
-                                                xmlns="http://www.w3.org/2000/svg"
-                                                width="20" height="20"
-                                                viewBox="0 0
-                                                24 24"><path
-                                                    d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/></svg>
-                                            </a>
-                                            <ul class="p-2 bg-primary-content">
-                                                <li><a>About Us</a></li>
-                                                <li><a>Our Offerings</a></li>
-                                                <li><a>how Uber Works</a></li>
-                                                <li><a>Global Citizenship</a></li>
-                                                <li><a>Explore</a></li>
-                                                <li><a>Newsroom</a></li>
-                                                <li><a>investor Relations</a></li>
-                                                <li><a>Blog</a></li>
-                                                <li><a>Careers</a></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <!-- Left Nav Section -->
-                            <li class="inline-block mr-2">
-                                <a href="#" class="transition duration-200
-                                    hover:bg-gray-700 py-2
-                                    px-3
-                                    rounded-full text-white
-                                    font-semibold">Safety</a>
-                            </li>
-                            <li class="inline-block mr-2">
-                                <a href="#" class="transition duration-200
-                                    hover:bg-gray-700 py-2
-                                    px-3
-                                    rounded-full text-white
-                                    font-semibold">Help</a>
-                            </li>
-                    </ul>
-                    </div>
-                    <!-- ul Spacer -->
-                    <ul class="inline-block pl-6"></ul>
-                    <!-- Right Nav Section -->
                     <div>
-                        <ul class="container mx-auto px-16 flex
-                            space-x-4 text-white
-                            font-semibold">
-                            <li>
-                                <div>
-                                    <button class="transition duration-200
-                                        hover:bg-gray-700 py-2
-                                        px-3
-                                        rounded-full">
-                                        <i class="fa-solid fa-globe"
-                                            style="color: #ffffff;"></i>
-                                        EN
-                                    </button>
-                                </div>
-                            </li>
-                            <li>
-                                <div>
-                                    <button class="transition duration-200
-                                        hover:bg-gray-700 py-2
-                                        px-3
-                                        rounded-full">
-                                        <i class="fa-solid fa-grip"
-                                            style="color: #ffffff;"></i>
-                                        Products
-                                    </button>
-                                </div>
-                            </li>
-                            <li>
-                                <div>
-                                    <button class="inline transition
-                                        duration-200
-                                        hover:bg-gray-700 py-2
-                                        px-3
-                                        rounded-full">
-                                        Log in
-                                    </button>
-                                </div>
-                            </li>
-                            <li>
-                                <div>
-                                    <button class="bg-white text-black
-                                        transition
-                                        duration-200
-                                        hover:bg-slate-200 py-2
-                                        px-3
-                                        rounded-full">
-                                        Sign Up
-                                    </button>
-                                </div>
-                            </li>
+                        <button class="inline transition
+                            duration-200
+                            hover:bg-gray-700 py-2
+                            px-3
+                            rounded-full">
+                            Log in
+                        </button>
+                    </div>
+                    <div class="px-2">
+                        <button class="bg-white text-black
+                            transition
+                            duration-200
+                            hover:bg-slate-200 py-2
+                            px-3
+                            rounded-full">
+                            Sign Up
+                        </button>
+                    </div>
+                </div>
+                
+            </div>
+            <!-- Collapsed Navbar End -->
+            <div class="flex justify-end dropdown dropdown-bottom">    
+                <label tabindex="0" class="btn btn-ghost lg:hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                </label>
+                <ul tabindex="0" class="menu dropdown dropdown-left dropdown-content p-2 shadow bg-base-100 rounded-box w-44 text-black">
+                    <li tabindex="0">
+                      <a class="justify-between">
+                          <i class='fas fa-angle-down'></i>
+                          Company
+                      </a>
+                        <ul tabindex="0" class="dropdown dropdown-content p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a>About Us</a></li>
+                            <li><a>Our Offerings</a></li>
+                            <li><a>how Uber Works</a></li>
+                            <li><a>Global Citizenship</a></li>
+                            <li><a>Explore</a></li>
+                            <li><a>Newsroom</a></li>
+                            <li><a>investor Relations</a></li>
+                            <li><a>Blog</a></li>
+                            <li><a>Careers</a></li>
                         </ul>
-                    </div>
-                </div>
-            </nav>
 
-            <!-- Hero Section -->
-            <section class="">
-                  <div class="hero min-h-screen flex justify-start pl-28" style="background-image: url(./Earner_bg2x.jpg);">
-                    <div class="hero-content bg-gray-100 text-gray-800 text-left text-neutral-content w-1/3 h-full pb-12 ml-40">
-                        <div class="max-w-md p-4">
-                            <div class="flex justify-between p-4 m-2 border-b-2">
-                                <div><i class="fa-solid fa-signal pl-3"></i><br>Drive or<br>deliver</div>
-                                <div><i class="fa-solid fa-utensils pl-1"></i><br>Eat</div>
-                                <div><i class="fa-solid fa-car pl-1"></i><br>Ride</div>
-                            </div>
-                            <h1 class="mb-5 text-5xl font-bold">Get in the driver's<br> seat and get paid</h1>
-                            <p class="mb-5 text-gray-500">Drive on the platform with the largest network of active riders.</p>
-                            <button class="btn">Sign up to drive</button><br><br>
-                            <a href="#" class="border-b-2 p-2 text-gray-500">Learn more about driving and delivering</a>
-                        </div>
-                    </div>
-                </div>
-              </section>
+                    </li>
+                  <li><a class="justify-end">Safety</a></li>
+                  <li><a class="justify-end">Help</a></li>
+                  <li><a class="justify-end">Products</a></li>
+                  <li><a class="justify-end">EN</a></li>
+                </ul>
+              </div>
+        </div>
+    </nav>
 
-            <!-- Features Section -->
-            <section class="">
-                <!-- Single Feature -->
-                <div class="text-center">
-                    <img src="feature_image.png" alt="Feature" class="mx-auto
-                        mb-4">
-                </div>
-            </section>
-            <footer class="py-4 px-4 text-gray-600">
-                <p>© 2023 Uber</p>
-                <p>tester</p>
-            </footer>
-        </body>
-    </html>
+</body>
+</html>
