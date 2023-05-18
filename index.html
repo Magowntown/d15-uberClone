@@ -10,10 +10,13 @@
         <script src="https://kit.fontawesome.com/a30844655f.js"
             crossorigin="anonymous"></script>
     </head>
-<body class="bg-gray-100">
-    <nav class="navbar bg-black text-white -pb-10">
+    
+<body class="bg-white">
+
+<!-- Navbar -->
+<nav class="navbar bg-black text-white">
         <!-- Navbar Start -->
-    <div class="navbar-start">
+    <div class="navbar-start lg:ml-20">
         <div>
           <a class="btn btn-ghost normal-case text-xl lg:pl-36">Uber</a>
         </div>
@@ -25,7 +28,7 @@
                       Company
                       <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/></svg>
                     </a>
-                    <ul class="dropdown-content menu p-2 bg-primary-content p-2 text-black">
+                    <ul class="dropdown-content menu p-2 bg-primary-content p-2 text-black z-30 shadow-black">
                         <li><a>About Us</a></li>
                         <li><a>Our Offerings</a></li>
                         <li><a>how Uber Works</a></li>
@@ -43,87 +46,143 @@
         </div>
     </div>
 
-        <!-- Navbar End -->
-        <div class="navbar-end lg:pr-36 ">
-            <div class="hidden lg:flex">
+    <!-- Navbar End -->
+    <div class="navbar-end lg:pr-36 lg:mr-14">
+        <div class="hidden lg:flex">
+            <button class="transition duration-200
+                hover:bg-gray-700 py-2
+                px-3
+                rounded-full">
+                <i class="fa-solid fa-globe pr-2"
+                    style="color: #ffffff;"></i>
+                EN
+            </button>
+            <div>
                 <button class="transition duration-200
                     hover:bg-gray-700 py-2
                     px-3
                     rounded-full">
-                    <i class="fa-solid fa-globe pr-2"
+                    <i class="fa-solid fa-grip pr-2"
                         style="color: #ffffff;"></i>
-                    EN
+                    Products
                 </button>
+            </div>
+        </div>
+            <!-- Log In/Sign Up Mobile Response -->
+            <div class="flex items-center">
                 <div>
-                    <button class="transition duration-200
+                    <button class="inline transition
+                        duration-200
                         hover:bg-gray-700 py-2
                         px-3
                         rounded-full">
-                        <i class="fa-solid fa-grip pr-2"
-                            style="color: #ffffff;"></i>
-                        Products
+                        Log in
+                    </button>
+                </div>
+                <div class="px-2">
+                    <button class="bg-white text-black
+                        transition
+                        duration-200
+                        hover:bg-slate-200 py-2
+                        px-3
+                        rounded-full">
+                        Sign Up
                     </button>
                 </div>
             </div>
-                <!-- Log In/Sign Up Mobile Response -->
-                <div class="flex items-center">
-                    <div>
-                        <button class="inline transition
-                            duration-200
-                            hover:bg-gray-700 py-2
-                            px-3
-                            rounded-full">
-                            Log in
-                        </button>
+        </div>
+        <!-- Collapsed Navbar End -->
+        <div class="flex justify-end dropdown dropdown-bottom">    
+            <label class="btn btn-circle swap swap-rotate lg:hidden">
+                <!-- this hidden checkbox controls the state -->
+                <input type="checkbox" />
+                <!-- hamburger icon -->
+                <svg class="swap-off fill-current" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512"><path d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z"/></svg>
+                <!-- close icon -->
+                <svg class="swap-on fill-current" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512"><polygon points="400 145.49 366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 145.49 400 256 289.49 366.51 400 400 366.51 289.49 256 400 145.49"/></svg>
+              </label>
+            <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-44 bg-white text-black">
+                <li tabindex="0">
+                    <div class="flex justify-end dropdown dropdown-left">
+                        <label class="justify-between">
+                            <i class='fas fa-angle-down'></i>
+                            Company
+                        </label>
+                          <ul tabindex="0" class="dropdown dropdown-content p-2 shadow bg-white rounded-box w-52">
+                              <li><a>About Us</a></li>
+                              <li><a>Our Offerings</a></li>
+                              <li><a>how Uber Works</a></li>
+                              <li><a>Global Citizenship</a></li>
+                              <li><a>Explore</a></li>
+                              <li><a>Newsroom</a></li>
+                              <li><a>investor Relations</a></li>
+                              <li><a>Blog</a></li>
+                              <li><a>Careers</a></li>
+                          </ul>
                     </div>
-                    <div class="px-2">
-                        <button class="bg-white text-black
-                            transition
-                            duration-200
-                            hover:bg-slate-200 py-2
-                            px-3
-                            rounded-full">
-                            Sign Up
-                        </button>
+                </li>
+              <li><a class="justify-end">Safety</a></li>
+              <li><a class="justify-end">Help</a></li>
+              <li><a class="justify-end">Products</a></li>
+              <li><a class="justify-end">EN</a></li>
+            </ul>
+          </div>
+</nav>
+
+<!-- Hero Section -->
+<hero class="sm:flex md:flex lg:flex justify-evenly w-full md:py-[80px] md:bg-[url('./Earner_bg2x.jpg')] bg-no-repeat">
+    <div class="md:flex justify-center md:w-2/5 sm:p-0 sm:block">
+        <div class="text-left text-neutral-content bg-white md:z-10">
+            <div class="text-black">
+                <div class="border-1 border-b-gray-500 px-12">
+                    <div class="flex justify-between p-4 m-2 ">
+                        <div class="border-4 border-transparent
+                        hover:border-b-black"><i class="fa-solid fa-signal pl-3"></i><br>Drive or<br>deliver</div>
+                        <div class="border-4 border-transparent
+                        hover:border-b-black"><i class="fa-solid fa-utensils pl-1"></i><br>Eat</div>
+                        <div class="border-4 border-transparent
+                        hover:border-b-black"><i class="fa-solid fa-car pl-1"></i><br>Ride</div>
                     </div>
                 </div>
-                
+                <div class="pt-10 pb-20 px-14">
+                    <h1 class="mb-5 text-5xl font-bold">Get in the driver's<br> seat and get paid</h1>
+                    <p class="mb-5 text-gray-500">Drive on the platform with the largest network of active riders.</p>
+                    <button class="btn text-white bg-black">Sign up to drive</button><br><br>
+                    <a href="#" class="border-b-2 p-2 text-gray-500">Learn more about driving and delivering</a>   
+                </div>
             </div>
-            <!-- Collapsed Navbar End -->
-            <div class="flex justify-end dropdown dropdown-bottom">    
-                <label tabindex="0" class="btn btn-ghost lg:hidden">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-                </label>
-                <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-44 text-black">
-                    <li tabindex="0">
-                        <div class="flex justify-end dropdown dropdown-left">
-                            <label tabindex="0" class="justify-between">
-                                <i class='fas fa-angle-down'></i>
-                                Company
-                            </label>
-                              <ul tabindex="0" class="dropdown dropdown-content p-2 shadow bg-base-100 rounded-box w-52">
-                                  <li><a>About Us</a></li>
-                                  <li><a>Our Offerings</a></li>
-                                  <li><a>how Uber Works</a></li>
-                                  <li><a>Global Citizenship</a></li>
-                                  <li><a>Explore</a></li>
-                                  <li><a>Newsroom</a></li>
-                                  <li><a>investor Relations</a></li>
-                                  <li><a>Blog</a></li>
-                                  <li><a>Careers</a></li>
-                              </ul>
-                        </div>
-
-
-                    </li>
-                  <li><a class="justify-end">Safety</a></li>
-                  <li><a class="justify-end">Help</a></li>
-                  <li><a class="justify-end">Products</a></li>
-                  <li><a class="justify-end">EN</a></li>
-                </ul>
-              </div>
         </div>
-    </nav>
+    </div>
+    <!-- Element Aligns for lg. Screen -->
+    <div class="flex w-1/4"></div>
+    <!-- Hero Img. sm. Screen -->
+    <img src="./Earner_bg_sml2x.jpg" alt="background" class="md:hidden sm:object-fit w-full h-full block">
+</hero>
+
+<!-- Cityscape Banner Section -->
+<section class="w-full text-black bg-blue-100 flex md:justify-evenly p-10 md:px-0 md:py-10" style="background-image: url(cityscape.jpg);">
+    <div class="md:w-1/4 md:py-10">
+        <div>
+            <h1 class="text-4xl font-bold">Uber for Business</h1><br>
+            <p>Transform the way your company moves and feeds it's people.</p><br>
+        </div>    
+        <button class="btn text-white rounded flex-none">Get started</button>
+    </div>
+    <!-- Element Aligns for lg. Screen -->
+    <div class="hidden md:flex w-1/4 lg:flex w-1/4"></div>
+</section>
+
+<!-- UberX Section -->
+<section class="w-full bg-black text-white md:flex md:justify-evenly p-10 md:px-0 md:py-10">
+        <div class="md:w-1/4">
+            <h2 class="text-4xl font-bold">Save up to 20% with UberX Share</h2><br>
+            <p>With UberX Share, get everything you love about UberX for a more affordable price. Save up to 20% when matched with a rider along your route. Terms apply. Currently available in certain US cities.</p><br>
+            <button class="btn text-black rounded-lg bg-white hover:bg-white">Learn about UberX Share</button>
+        </div>
+        <div class="min-[320px]:max-sm:mt-4 md:w-1/4">
+            <img src="uberX_pass.jpg" alt="sidePicture" class="items-center rounded">
+        </div>
+</section>
 
 </body>
 </html>
